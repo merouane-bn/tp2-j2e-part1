@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import java.util.List;
 
 @SpringBootApplication
@@ -14,12 +13,7 @@ public class StudentsAppApplication implements CommandLineRunner {
 //pour ajouter des produits a la base de donnée en utilise spring data
    @Autowired
    private ProductRepository productRepository;
-
-    public static void main(String[] args) {
-
-        SpringApplication.run(StudentsAppApplication.class, args);
-    }
-
+    public static void main(String[] args) {SpringApplication.run(StudentsAppApplication.class, args);}
     @Override
     public void run(String... args) throws Exception {
    /* productRepository.save(new Product(null,"Computer",4300,3));
